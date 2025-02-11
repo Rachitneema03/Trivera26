@@ -120,7 +120,7 @@ const FrontPage2025 = ({ onScaleComplete }) => {
 
     const xOffset = zeroBounds.left + zeroBounds.width / 2 - (containerBounds.left + containerBounds.width / 2);
     const yOffset = zeroBounds.top + zeroBounds.height / 2 - (containerBounds.top + containerBounds.height / 2);
-    const leftOffset = 40;
+    const leftOffset = 0;
 
     timeline.to(containerRef.current, {
       scale: 30,
@@ -173,17 +173,19 @@ const FrontPage2025 = ({ onScaleComplete }) => {
   return (
     <div className="main-container25">
       <div ref={containerRef} className="frontpage-container25">
-        <SideMarquee2 />
+        <SideMarquee2 isRight={true}  />
         <div className="landing_2025_stars"></div>
         <div className="line-overlay25"></div>
         <div className="year-container25">
-          <span ref={yearRef} className="year25">
-            2&nbsp;<span ref={zeroRef} className="zero">0</span>&nbsp;2&nbsp;5
-          </span>
+        <span ref={yearRef} className="year25">
+          <p className="month">MARCH</p>
+          <span ref={zeroRef} className="zero">11</span>
+          <span className="full-year">2025</span>
+        </span>
         </div>
         <div className="tagline-container25" ref={taglineRef}>
           <div className="tagline25">
-            {Array.from("THE DATE AWAITS, BUT THE EXCITEMENT STARTS NOW").map(
+            {Array.from("THE DOOR TO THE WITHIN IS OPEN-STEP THROUGH AND DISCOVER.").map(
               (char, index) => (
                 <span key={index} className="tagline-letter25">
                   {char === " " ? "\u00A0" : char}
