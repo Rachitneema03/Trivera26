@@ -122,6 +122,7 @@ const VideoSection = () => {
       trigger: sectionRef.current,
       start: "top center",
       end: "bottom center",
+      markers: true,
       onEnter: () => {
         setIsVisible(true);
         if (playerRef.current) {

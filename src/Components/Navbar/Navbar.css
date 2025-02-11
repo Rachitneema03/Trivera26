@@ -1,9 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
 .navbar{
     position: fixed;
      width: 100%;
      display: flex;
      justify-content: space-between;
-     padding: 10px 100px;
+     padding: 0px 100px;
      background-color: rgba(0, 0, 0, 0.525);
     
      
@@ -93,6 +99,7 @@
      }
     .tedx-logo{
      width: 150px;
+     top: 0px;
     }
      
      .nav-menu{
@@ -123,7 +130,7 @@
      
      .navbar{
          position: fixed;
-         padding: 10px 0px;
+         padding: 00px 0px;
          background-color: transparent;
          z-index: 5777775;
        
