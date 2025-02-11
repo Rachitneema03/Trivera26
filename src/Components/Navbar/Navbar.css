@@ -1,14 +1,13 @@
-.navbar{
+.navbar {
   position: fixed;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   padding: 10px 100px;
-   background-color: rgba(0, 0, 0, 0.525);
-  
-   
-   align-items: center;
-   z-index: 1000 !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+  background-color: rgba(0, 0, 0, 0.525);
+  align-items: center;
+  z-index: 1000 !important;
+  top: 0;
 }
 .nav-logo{
    display: flex;
@@ -175,6 +174,7 @@
    opacity: 1;
   height: 110vh;
   clip-path: circle(2311px at 150% -100%);
+  transform: translate(0px, -57px);
      } 
       
    
@@ -218,6 +218,7 @@
    .nav-menu.open{
       background-color: rgba(0, 0, 0, 0.912);
        clip-path: circle(1511px at 270% -20%);
+       transform: translate(0px, -57px);
    }
   
 }
