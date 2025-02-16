@@ -16,6 +16,8 @@ import React, { useState, useEffect } from 'react';
 import Buy from './Components/Buynow/Buy';
 import Layout from './Components/Buynow/Layout';
 import ScrollToTop from './ScrollToTop';
+import Guidelines from './2025-Components/Guidelines/Guidelines';
+import GuidelinesTeam from './2025-Components/Guidelines/GuidelinesTeam';
 
 function App() {
 
@@ -78,6 +80,8 @@ function App() {
               <Route path='/' element={<Main />} />
               <Route path='/gallery' element={<HeroParallax products={productsData} />} />
               <Route path='/sponsors' element={<Subh />} />
+              <Route path='/guideline' element={<Guidelines />} />
+              <Route path='/guidelineteam' element={<GuidelinesTeam />} />
               <Route path='/teams-2024' element={<TeamSection />} />
               <Route path='/teams-2023' element={<TeamSection />} />
               <Route path='/teams-2025' element={<TeamSection />} />
