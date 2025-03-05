@@ -1040,6 +1040,19 @@
                 "anger":90,
                 "fun": 46,
                 "ln":""
+            },
+            {
+                "id": "sponsorship",
+                "name": "Saharsh",
+                "info": "TEDxDAVV",
+                "image": "https://imgur.com/uQeXMCY.jpeg",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46,
+                "ln":""
             }
         ],
         "DESIGN-TEAM": [

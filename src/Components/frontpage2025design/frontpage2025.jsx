@@ -194,7 +194,7 @@ const FrontPage2025 = ({ onScaleComplete }) => {
         <div className="year-container25">
           <span ref={yearRef} className="year25">
             <p className="month">MARCH</p>
-            <span ref={zeroRef} className="zero">11</span>
+            <span ref={zeroRef} className="zero">29</span>
             <span className="full-year">2025</span>
           </span>
         </div>
