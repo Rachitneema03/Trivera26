@@ -9,7 +9,6 @@ import { ReactComponent as NumberSvg } from "../Assests/Images/Group 104.svg";
 import { ReactComponent as Cultural } from "../Assests/Images/Group 106.svg";
 import { ReactComponent as SPEAKERS } from "../Assests/Images/Group 105.svg";
 
-
 const debounce = (func, wait) => {
   let timeout;
   return function executedFunction(...args) {
@@ -96,13 +95,6 @@ const FrontPage2025 = ({ onScaleComplete }) => {
       "+=0.5"
     );
 
-    // Continue with normal animation sequence
-    timeline.to(
-      yearRef.current.querySelector(".zero"),
-      { opacity: 1, duration: 0.5, ease: "power2.out" },
-      "-=0.5"
-    );
-
     // Add initial state for line-overlay
     gsap.set(lineOverlayRef.current, { opacity: 0 });
 
@@ -156,7 +148,7 @@ const FrontPage2025 = ({ onScaleComplete }) => {
     const xOffset = zeroBounds.left + zeroBounds.width / 2 - (containerBounds.left + containerBounds.width / 2);
     const yOffset = zeroBounds.top + zeroBounds.height / 2 - (containerBounds.top + containerBounds.height / 2);
     const leftOffset = 0;
-
+   
     // Original zoom animation
     timeline.to(containerRef.current, {
       scale: 30,
@@ -190,26 +182,24 @@ const FrontPage2025 = ({ onScaleComplete }) => {
 
   return (
     <div className="main-container25">
-       <SideMarquee2 isRight={true} />
+      <SideMarquee2 isRight={true} />
       <div ref={containerRef} className="frontpage-container25">
-       
         <div className="landing_2025_stars"></div>
         <div ref={lineOverlayRef} className="line-overlay25"></div>
         <div className="year-container25">
           <span ref={yearRef} className="year25">
-          <div className="cultural-container">
-          <Cultural />
-          </div>
+            <div className="cultural-container">
+              <Cultural />
+            </div>
             <p className="month">MARCH</p>
             <span ref={zeroRef} className="zero">
               <NumberSvg />
             </span>
             <span className="full-year">2025</span>
             <div className="speakers-container">
-            <SPEAKERS/>
+              <SPEAKERS/>
             </div>
           </span>
-         
         </div>
         <div className="tagline-container25" ref={taglineRef}>
           <div className="tagline25">

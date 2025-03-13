@@ -76,12 +76,15 @@
   position: absolute;
   top: 55%;
   left: 48%;
+  top: 55%;
+  left: 48%;
   transform: translate(-50%, -50%);
   background-color: black;
   z-index: 2;
 }
 
 .year25 {
+  font-family: 'Protomolecule-regular', sans-serif !important;
   font-family: 'Protomolecule-regular', sans-serif !important;
   color: #fff;
   letter-spacing: 1.5rem;
@@ -91,6 +94,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+ top: 50%;
  top: 50%;
 }
 .text2{
@@ -105,6 +109,7 @@
   opacity: 0.6;
 }
 .zero {
+  font-size: 18rem;
   font-size: 18rem;
   transition: opacity 1s ease-out;
   letter-spacing: 0rem;
@@ -156,6 +161,7 @@
   align-items: center;
   position: relative;
   top: 90%;
+  top: 90%;
   transform: translateY(-50%);
   width: 100%;
   z-index: 3;
@@ -163,6 +169,7 @@
 
 .tagline25 {
   position: relative;
+  font-size: 30px;
   font-size: 30px;
   padding: 5px 15px;
   background-color: black;
@@ -175,7 +182,9 @@
 .line-overlay25 {
   position: absolute;
   top: 90%;
+  top: 90%;
   left: 0;
+  right: 45px;
   right: 45px;
   height: 2px;
   background: white;
@@ -190,13 +199,17 @@
 
 .blinking25 {
   animation: blink25 2.8s ease-in-out;
+  animation: blink25 2.8s ease-in-out;
 }
 
 /* Media Queries for Responsiveness */
 
 
+
 @media (max-width: 1080px) {
   .text25 {
+    font-size: 10px;
+    width: 60%;
     font-size: 10px;
     width: 60%;
   }
@@ -248,7 +261,14 @@
   .text25 {
     font-size: 12px;
     width: 75%;
+    width: 75%;
   }
+  .month {
+    font-size: 4.5rem;
+    letter-spacing: 0.3rem;
+  }
+  .zero {
+    font-size: 12rem;}
   .month {
     font-size: 4.5rem;
     letter-spacing: 0.3rem;
@@ -274,10 +294,23 @@
   .text25 {
     font-size: 10px;
     width: 50%;
+    width: 50%;
   }
   .text2 {
     left: -100px;
   }
+  .month {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+  }
+  .zero {
+    font-size: 10rem;
+  }
+  .full-year {
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    line-height: 3;
+    top: 30px; }
   .month {
     font-size: 3.5rem;
     letter-spacing: 0.2rem;
@@ -327,6 +360,7 @@
   .text25 {
     font-size: 6px;
     width: 50%;
+    width: 50%;
   }
   .text2 {
     left: -40px;
@@ -345,9 +379,26 @@
     letter-spacing: 0.8rem;
     line-height: 3;
     position: relative;
+    top: 20px; /* Added to move the full-year down in mobile view */}
+
+  .month {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.8;
+  }
+  .zero {
+    font-size: 7rem;
+    line-height: 1;
+  }
+  .full-year {
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+    line-height: 3;
+    position: relative;
     top: 20px; /* Added to move the full-year down in mobile view */
   }
   .tagline25 {
+    font-size: 20px;
     font-size: 20px;
   }
   .year-container25 {
@@ -422,4 +473,3 @@
     top: -25px;
   }
 }
-
