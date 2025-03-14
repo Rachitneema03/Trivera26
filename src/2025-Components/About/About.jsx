@@ -27,7 +27,7 @@ const About = () => {
 
             {/* <div className='about_2025_stars'></div> */}
 
-            <ImageAbout img={image4} />
+            <ImageAbout img={image2} />
 
             <span className=' flex flex-col gap-[50px] max-w-[500px]' >
                 <TypeHeading content='Interconnectedness' />

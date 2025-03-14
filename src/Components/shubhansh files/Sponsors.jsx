@@ -19,7 +19,7 @@ export default function Sponsors(props){
                 each: 0.2
             }
         })
-    })
+    },[])
 
     //console.log(props);
     let img = props.Image.image;

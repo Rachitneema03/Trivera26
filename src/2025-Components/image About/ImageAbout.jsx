@@ -52,26 +52,26 @@ const ImageAbout = (props) => {
       };
     }, []);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        if(scrollSpeed){
-            gsap.to(aboutImagesContainerRef.current, {
-                y: -80,
-                rowGap: 30,
-                duration: 0.84,
-                ease: 'power3.out',
-            });
-        }else{
-            gsap.to(aboutImagesContainerRef.current, {
-                y:0,
-                rowGap: 7,
-                duration: 0.8,
-                delay: 0.4,
-                ease: 'power3.out',
-            });
-        }
+    //     if(scrollSpeed){
+    //         gsap.to(aboutImagesContainerRef.current, {
+    //             y: -80,
+    //             rowGap: 30,
+    //             duration: 0.84,
+    //             ease: 'power3.out',
+    //         });
+    //     }else{
+    //         gsap.to(aboutImagesContainerRef.current, {
+    //             y:0,
+    //             rowGap: 7,
+    //             duration: 0.8,
+    //             delay: 0.4,
+    //             ease: 'power3.out',
+    //         });
+    //     }
 
-    },[scrollSpeed])
+    // },[scrollSpeed])
 
     useEffect(() => {
 

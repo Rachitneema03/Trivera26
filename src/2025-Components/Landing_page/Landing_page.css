@@ -115,7 +115,7 @@
   transition: all 0.5s ease-out;
 }
 .text_2025{
-    font-size: 14.5px;
+    font-size: 12.5px;
     display: flex;
     text-align: left;
     justify-content: center;
@@ -167,6 +167,7 @@
 }
 .person2025 {
     opacity: 1;
+    filter: brightness(2.4);
     transform: translateY(100px);
     animation: appear 2s ease-in-out forwards;
     animation-delay: 4s;
@@ -538,3 +539,5 @@
     align-items: center!important;
     justify-content: center!important;
   }
+
+  

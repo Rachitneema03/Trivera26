@@ -200,7 +200,7 @@ useEffect(() => {
           <div className="line_20251">
             E<span className="blink-letter1">m</span>br
             <span className="blink-letter1">a</span>ce
-            <span className="text_2025">
+            <span className="text_2025 text-gray-400 text-justify">
               It's not just about who you are; it's about who you are becoming
               when no one is watching.
               <br />
@@ -231,19 +231,19 @@ useEffect(() => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs>
+          <defs>
             <linearGradient
-    id="fillGradient"
-    x1="0%"
-    y1="0%"
-    x2="100%"
-    y2="0%"
-  >
-    <stop offset="0%" stopColor="#FF00FF" />
-    <stop offset="33%" stopColor="#8B5CF6" />
-    <stop offset="66%" stopColor="#4F46E5" />
-    <stop offset="100%" stopColor="#00FFFF" />
-  </linearGradient>
+            id="fillGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
+            <stop offset="0%" stopColor="#FF00FF" />
+            <stop offset="33%" stopColor="#8B5CF6" />
+            <stop offset="66%" stopColor="#4F46E5" />
+            <stop offset="100%" stopColor="#00FFFF" />
+          </linearGradient>
      <filter id="innerGlowFilter" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
           <feFlood floodColor="#FF00FF" floodOpacity="var(--inner-glow-opacity, 0.5)" result="glowColor"/>
@@ -363,6 +363,8 @@ useEffect(() => {
             </g>
           </svg>
         </div>
+
+        
       </div>
     </div>
   );

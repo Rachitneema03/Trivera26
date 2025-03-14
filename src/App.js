@@ -17,6 +17,7 @@ import Buy from './Components/Buynow/Buy';
 import Layout from './Components/Buynow/Layout';
 import ScrollToTop from './ScrollToTop';
 import Guidelines from './2025-Components/Guidelines/Guidelines';
+import LenisProvider from './Components/LenisProvider';
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
     <div className="App">
        <Loader/>
         <div className='hey'>
+          <LenisProvider />
           <Router>
           <ScrollToTop/>
             <Navbar />

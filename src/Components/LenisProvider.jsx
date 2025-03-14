@@ -1,0 +1,29 @@
+import Lenis from "lenis";
+import { useEffect } from "react";
+
+export default function LenisProvider() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration: 1.4,
+      syncTouch: true,
+      touchMultiplier: 1.5,
+      syncTouchLerp: 0.15,
+      easing: (x) => 1 - Math.pow(1 - x, 4),
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      // Cleanup function to prevent memory leaks
+      lenis.destroy();
+    };
+  }, []);
+
+  return null;
+}
