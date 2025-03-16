@@ -219,7 +219,7 @@ text-align: center;
 .mspeaker-desg{
     position: absolute;
     width: 70vw;
-    opacity: 0;
+    opacity: 0.8;
     text-align: center;
     font-style: italic;
     z-index: 3;

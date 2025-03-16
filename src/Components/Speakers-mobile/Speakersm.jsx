@@ -313,9 +313,9 @@ const Speakersm = () => {
         duration: 1,
         scrollTrigger: {
           trigger: name.closest(".o-mslider__item"),
-         
+        
           scrub: 1,
-          start: "top 50%",
+          start: "top 80%",
           end: "top 100%",
         },
         ease: "power3"
@@ -329,7 +329,7 @@ const Speakersm = () => {
         scrollTrigger: {
           trigger: img.closest(".o-mslider__item"),
           scrub: 1,
-          start: "top 50%",
+          start: "top 80%",
           end: "top 100%",
         },
       });
@@ -342,7 +342,7 @@ const Speakersm = () => {
         scrollTrigger: {
           trigger: desc.closest(".o-mslider__item"),
           scrub: 1,
-          start: "top 30%",
+          start: "top 80%",
           end: "top 100%",
         },
         ease: "power3"
@@ -352,11 +352,11 @@ const Speakersm = () => {
     speakerDesg.forEach(designation => {
       gsap.to(designation, {
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         scrollTrigger: {
           trigger: designation.closest(".o-mslider__item"),
           scrub: 1,
-          start: "top 30%",
+          start: "top 80%",
           end: "top 100%",
         },
         ease: "bounce.in"
