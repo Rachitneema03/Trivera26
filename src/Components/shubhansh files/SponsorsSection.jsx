@@ -5,6 +5,7 @@ import Sponsors from './Sponsors';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Marquee from "react-fast-marquee";
 import SponsorData from '../../Sponors.json';
+// import cdr from '../../../public/assets/'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,7 +28,7 @@ function SponsorsSection() {
         });
     }, []);
     
-    let sponsorList = SponsorData[2024] || [];
+    let sponsorList = year==2024 ? SponsorData[2024] : SponsorData[2025];
     const sponsorTriggerRef = useRef(null);
     const sponsorContainerRef = useRef(null);
 
@@ -39,13 +40,13 @@ function SponsorsSection() {
                         <div key={index} className='word'>{char === ' ' ? '\u00A0' : char}</div>
                     ))}
                 </h1>
-                <select className="year-drop" value={year} onChange={(e) => setYear(parseInt(e.target.value))}>
+                <select className="year-drop" value={year} onChange={(e) => setYear(e.target.value)}>
                     <option className="option" value="2025">2025</option>
                     <option className="option" value="2024">2024</option>
                 </select>
             </div>
             
-            <Marquee speed={100} pauseOnClick={true}>
+            <Marquee speed={70} pauseOnClick={true}>
                 <div className='sponsors-container' ref={sponsorContainerRef}>
                     {sponsorList.map((sponsor, index) => (
                         <Sponsors key={index} Image={sponsor} />

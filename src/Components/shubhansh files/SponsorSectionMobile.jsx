@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 function SponsorMobileSection() {
     const [selectedYear, setSelectedYear] = useState('2025');
 
+    // testing
 useEffect(() => {
     let tl2 = gsap.timeline();
     tl2.fromTo('.word', {
@@ -41,7 +42,7 @@ useEffect(() => {
         delay: 2,
         ease: "power2.out"
     });
-}, [selectedYear]);
+}, []);
 
     const sponsor_data = SponsorData[selectedYear];
     const sponsorLen = sponsor_data?.length || 0;
@@ -104,20 +105,20 @@ useEffect(() => {
             </div>
 
             <Marquee speed={80} pauseOnClick={true}>
-    <div className='sponsors-container-Mobile'>
-        {sponsor_data?.map((sponsor, index) => (
-            <Sponsors key={index} className='sponsor_image' Image={sponsor} />
-        ))}
-    </div>
-</Marquee>
+                <div className='sponsors-container-Mobile'>
+                    {sponsor_data?.map((sponsor, index) => (
+                        <Sponsors key={index} className='sponsor_image' Image={sponsor} />
+                    ))}
+                </div>
+            </Marquee>
 
-<Marquee speed={80} pauseOnClick={true}>
-    <div className='sponsors-container-Mobile2'>
-        {sponsor_data?.map((sponsor, index) => (
-            <Sponsors key={index} className='sponsor_image' Image={sponsor} />
-        ))}
-    </div>
-</Marquee>
+            <Marquee speed={80} pauseOnClick={true}>
+                <div className='sponsors-container-Mobile2'>
+                    {sponsor_data?.map((sponsor, index) => (
+                        <Sponsors key={index} className='sponsor_image' Image={sponsor} />
+                    ))}
+                </div>
+            </Marquee>
         </div>
     );
 }
