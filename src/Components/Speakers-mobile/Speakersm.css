@@ -302,9 +302,10 @@ padding-top: 3vh;
     left: 45%;
 }
 .mRenuka .lin{
-    left:60%
+    left:70%
 }
 .mRenuka .mSpeaker-name{
+    top: 12vh;
     width: 50vw;
     right: -75%;
     font-size: 24px;
