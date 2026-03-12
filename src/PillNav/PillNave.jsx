@@ -10,10 +10,10 @@ const PillNav = ({
   activeHref,
   className = '',
   ease = 'power3.easeOut',
-  baseColor = '#fff',
-  pillColor = '#060010',
-  hoveredPillTextColor = '#060010',
-  pillTextColor,
+  baseColor="#1a1a1a" ,         // dark text (visible on cream bg)
+  pillColor="#1a1a1a" ,         // dark pill on hover
+  hoveredPillTextColor="#f5f0e8",  // cream text inside the pill on hover
+  pillTextColor="#1a1a1a",
   onMobileMenuClick,
   initialLoadAnimation = true
 }) => {

@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 100px;
-  background-color: rgba(0, 0, 0, 0.525);
   align-items: center;
   z-index: 1000;
   top: 0;

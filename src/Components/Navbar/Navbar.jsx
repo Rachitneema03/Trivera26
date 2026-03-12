@@ -24,10 +24,10 @@ const Navbar = () => {
         items={navItems}
         activeHref={location.pathname}
         ease="power2.out"
-        baseColor="#ffffff"
-        pillColor="#ffffff"              /* hover fill = white */
-        hoveredPillTextColor="#000000"  /* text on hover = black */
-        pillTextColor="#ffffff"         /* resting text = white */
+        baseColor="#1a1a1a"           /* hover circle fill = dark */
+        pillColor="#1a1a1a"           /* pill bg on hover = dark */
+        hoveredPillTextColor="#f5f0e8" /* text inside pill on hover = cream */
+        pillTextColor="#1a1a1a"       /* resting text = dark */
         initialLoadAnimation={true}
       />
     </div>
