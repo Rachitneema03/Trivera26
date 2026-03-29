@@ -40,10 +40,10 @@ function SponsorsSection() {
                         <div key={index} className='word'>{char === ' ' ? '\u00A0' : char}</div>
                     ))}
                 </h1>
-                <select className="year-drop" value={year} onChange={(e) => setYear(e.target.value)}>
+                {/* <select className="year-drop" value={year} onChange={(e) => setYear(e.target.value)}>
                     <option className="option" value="2025">2025</option>
                     <option className="option" value="2024">2024</option>
-                </select>
+                </select> */}
             </div>
             
             <Marquee speed={70} pauseOnClick={true}>
