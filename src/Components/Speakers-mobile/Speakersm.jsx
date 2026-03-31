@@ -467,14 +467,6 @@ const Speakersm = () => {
         <div ref={progressBarRef} className="mprogress"></div>
       </div>
       <ul class="o-mslider__list">
-        <select className="myear" onChange={handleChange} value={selectedYear}>
-          <option value="2025" selected>
-            2025
-          </option>
-          <option value="2024">2024</option>
-          <option value="2023">2023</option>
-        </select>
-
         {selectedSpeakers.map((speaker, index) => {
           let speakerClass = "";
           switch (selectedYear) {
