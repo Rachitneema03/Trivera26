@@ -35,18 +35,18 @@ const VideoSection = () => {
       if (!videoRef.current) return;
 
       playerRef.current = new window.YT.Player(videoRef.current, {
-        videoId: 'jZRbOFMqESs',
-        playerVars: {
-          autoplay: 1,
-          controls: 0,
-          mute: 0,
-          loop: 1,
-          modestbranding: 1,
-          playsinline: 1,
-          rel: 0,
-          showinfo: 0,
-          playlist: 'jZRbOFMqESs'
-        },
+       videoId: 'iNMGvFqnQ-U',
+  playerVars: {
+    autoplay: 1,
+    controls: 0,
+    mute: 0,
+    loop: 1,
+    modestbranding: 1,
+    playsinline: 1,
+    rel: 0,
+    showinfo: 0,
+    playlist: 'iNMGvFqnQ-U'
+  },
         events: {
           onReady: (event) => {
             event.target.playVideo();
@@ -214,7 +214,7 @@ const VideoSection = () => {
     >
       <Marquee
         autoFill={true}
-        className="blur-[7px] min-w-[120vw] rotate-12 text-[200px] font-black absolute bg-gradient-to-b from-purple-500 to-pink-500"
+        className="blur-[7px] min-w-[120vw] rotate-12 text-[200px] font-black absolute bg-gradient-to-b from-blue-400 to-green-600"
       >
         <p className="mr-20">HIGHLIGHTS</p>
       </Marquee>
