@@ -4,6 +4,7 @@
     font-size: 48px;
     font-family: 'Coolvetica', sans-serif;
     font-weight: 400; /* coolvetica works best with normal weight */
+    font-style: italic;
     color: #f7fdcf;
     align-self: flex-start;
     z-index: 10;
