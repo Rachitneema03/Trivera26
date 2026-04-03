@@ -433,7 +433,11 @@ body {
   }
 
   .hero-content { padding: 0 24px; }
-
+  .hero-subtext{
+    margin-top: 30px;
+    max-width: 100%;
+    line-height: 1.4;
+  }
   .hero-line-1,
   .hero-line-2,
   .hero-line-3 { 
@@ -454,25 +458,26 @@ body {
   .sticker-chaos   { bottom: 8%; left: 50%; top: auto; transform: translateX(-50%); }
 
   .emoji-auto { 
-    top: 90px;
-    right: 12px;
-    /* FIX 8: clamp min was 360px on 768px screen — still too wide, reduced */
-    width: clamp(200px, 45vw, 350px); 
-    height: clamp(200px, 45vw, 350px);
+    margin-top: 40px;
+    right: 5%;
+    /* Responsive size: 384px at 768px viewport, 240px at 480px viewport */
+    width: clamp(240px, 50vw, 384px); 
+    height: clamp(240px, 50vw, 384px);
     z-index: 50;
   }
   .shape-layer {
-    top: 0%;
-    right: -10%;
-    /* FIX 9: clamp min was 600px on 768px screen — overflows, reduced */
-    width: clamp(300px, 55vw, 550px);
-    height: clamp(300px, 55vw, 550px);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    /* Responsive size: cover right half with scaling from 480px to 768px */
+    width: clamp(240px, 50vw, 384px);
+    height: clamp(240px, 50vw, 384px);
     z-index: 1;
   }
   .shape-layer img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+    width: clamp(240px, 50vw, 384px);
+    height: clamp(240px, 50vw, 384px);
+    object-fit: contain;
     object-position: center;
   }
 
@@ -497,74 +502,6 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .landing-wrapper { 
-    padding: 90px 0 60px;
-    padding-left: 24px;
-    background-image: url("../../Images/mobile_bg.png");
-  }
-
-  .hero-content { 
-    padding: 0;
-    max-width: 100%;
-  }
-
-  .hero-line-1,
-  .hero-line-2,
-  .hero-line-3 { 
-    font-size: clamp(48px, 13vw, 68px);
-    white-space: normal; /* FIX 10: ensure no overflow on small screens */
-  }
-
-  .hero-subtext { 
-    font-size: clamp(13px, 3.2vw, 16px);
-    margin: 16px 0;
-    line-height: 1.5;
-  }
-
-  .sticker-chaos { 
-    bottom: 8%; 
-    font-size: 8px;
-    padding: 6px 10px;
-  }
-
-  .emoji-auto { 
-    top: 38%;
-    right: -5px;
-    width: 280px; 
-    height: 280px;
-  }
-
-  .shape-layer {
-    top: 30%;
-    right: -15%;
-    width: 340px;
-    height: 340px;
-    z-index: 1;
-  }
-  .shape-layer img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
-
-  .emoji-coffee { 
-    bottom: 14%; 
-    right: 10px;
-    width: clamp(70px, 10vw, 100px); 
-    height: clamp(70px, 10vw, 100px);
-  }
-
-  .btn-register,
-  .btn-explore { 
-    max-width: 100%;
-    font-size: clamp(12px, 2.8vw, 14px);
-    padding: 10px 16px;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 480px) {
   .landing-wrapper { 
     width: 100%;
@@ -575,9 +512,10 @@ body {
 
   .hero-heading {
     /* Removed margin-left: 25% — was pushing text off screen */
-    margin-bottom: 280px;
-    margin-left: 0;
-    margin-top: 0;
+    margin-top: -30px;
+    margin-bottom: 380px;
+    text-align: center;
+    
   }
 
   .hero-line-1,
@@ -598,10 +536,11 @@ body {
 
   /* Bus emoji — large, positioned right-center of screen */
   .emoji-auto { 
-    top: 38%;
-    right: -5px;
-    width: 260px; 
-    height: 260px;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(340px, 80vw, 380px);
+    height: clamp(340px, 80vw, 380px);
     z-index: 50;
   }
 
@@ -609,9 +548,10 @@ body {
   .shape-layer {
     top: 30%;
     right: -18%;
-    width: 320px;
-    height: 320px;
-    z-index: 1;
+    width: 375px;
+    height: 375px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .shape-layer img {
     width: 100%;
@@ -644,10 +584,9 @@ body {
   }
 
   .hero-heading {
-    margin-top: 0;
-    margin-bottom: 260px;
-    margin-left: 0;
-    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 380px;
+    text-align: center;
   }
 
   .hero-line-1,
@@ -667,20 +606,26 @@ body {
 
   /* Bus — large, anchored to right side */
   .emoji-auto { 
-    top: 36%;
-    right: -5px;
-    width: 240px; 
-    height: 240px;
+    margin-top: 20px;
+    width: clamp(240px, 100vw, 320px); 
+    height: clamp(240px, 100vw, 320px);
     z-index: 50;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* Pattern exactly behind bus — same top/right anchor */
   .shape-layer {
-    top: 28%;
+    /* top: 28%;
     right: -20%;
     width: 300px;
-    height: 300px;
-    z-index: 1;
+    height: 300px; */
+    margin-top: 20px;
+    margin-bottom: 380px;
+    align-items: center;
+    right: 0%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .shape-layer img {
     width: 100%;
